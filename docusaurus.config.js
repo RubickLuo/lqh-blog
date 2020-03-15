@@ -1,11 +1,11 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://RubickLuo.github.io',
+  baseUrl: '/RubickLuo.github.io/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'RubickLuo', // Usually your GitHub org/user name.
+  projectName: 'RubickLuo.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
