@@ -11,7 +11,7 @@ module.exports = {
       title: '屾森のblog',
       logo: {
         alt: 'My Site Logo',
-        src: 'static/img/logo.svg',
+        src: 'img/logo.png',
       },
       links: [
         // {
