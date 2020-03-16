@@ -1,6 +1,6 @@
 module.exports = {
   title: '屾森のblog',
-  tagline: '待我走尽苦，还你一口甜',
+  tagline: '',
   url: 'https://essm.xyz',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -81,7 +81,7 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} lqh, Inc. Built with Docusaurus.`,
-      icp: "滇ICP备20001659号"
+      // icp: "滇ICP备20001659号"
     },
   },
   presets: [
