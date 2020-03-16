@@ -1,11 +1,11 @@
 module.exports = {
   title: '屾森のblog',
   tagline: `待我走尽苦，还你一口甜`,
-  url: 'https://rubickluo.github.io',
+  url: 'https://essm.xyz',
   baseUrl: '/',
-  favicon: 'static/img/favicon.ico',
+  favicon: 'img/favicon.ico',
   organizationName: 'RubickLuo', // Usually your GitHub org/user name.
-  projectName: 'RubickLuo.github.io', // Usually your repo name.
+  projectName: 'lqh-blog', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '屾森のblog',
@@ -20,7 +20,7 @@ module.exports = {
         //   label: 'Docs',
         //   position: 'left',
         // },
-        {to: 'blog', label: 'Blog', position: 'right'},
+        {to: '/', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/RubickLuo/',
           label: 'GitHub',
@@ -28,54 +28,60 @@ module.exports = {
         },
       ],
     },
+    algolia: {
+      apiKey: 'api-key',
+      indexName: 'index-name',
+      algoliaOptions: {}, // Optional, if provided by Algolia
+    },
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
-        },
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {
+        //       label: 'Style Guide',
+        //       to: 'docs/doc1',
+        //     },
+        //     {
+        //       label: 'Second Doc',
+        //       to: 'docs/doc2',
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     {
+        //       label: 'Stack Overflow',
+        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //     },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discordapp.com/invite/docusaurus',
+        //     },
+        //   ],
+        // },
         {
           title: 'Social',
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: '/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/RubickLuo',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+            // {
+            //   label: 'Twitter',
+            //   href: 'https://twitter.com/docusaurus',
+            // },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} lqh, Inc. Built with Docusaurus.`,
+      icp: "滇ICP备20001659号"
     },
   },
   presets: [
@@ -89,12 +95,19 @@ module.exports = {
         // },
         blog: {
           path: './blog',
-          // routeBasePath: '/'
+          routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        SearchBar: ["@docusaurus/theme-search-algolia"]
       },
     ],
   ],
+  themes: ["@docusaurus/theme-live-codeblock"],
+  
+  // plugins: [
+  //   path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
+  //   path.resolve(__dirname, "./src/plugin/plugin-google-adsense")
+  // ]
 };
