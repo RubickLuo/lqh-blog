@@ -88,11 +88,6 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/master/website/',
-        // },
         blog: {
           path: './blog',
           routeBasePath: '/'
@@ -111,3 +106,4 @@ module.exports = {
   //   path.resolve(__dirname, "./src/plugin/plugin-google-adsense")
   // ]
 };
+
