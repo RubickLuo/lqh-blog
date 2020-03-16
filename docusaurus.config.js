@@ -1,17 +1,17 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://RubickLuo.github.io',
-  baseUrl: '/RubickLuo.github.io/',
-  favicon: 'img/favicon.ico',
+  title: '屾森のblog',
+  tagline: `待我走尽苦，还你一口甜`,
+  url: 'https://rubickluo.github.io',
+  baseUrl: '/',
+  favicon: 'static/img/favicon.ico',
   organizationName: 'RubickLuo', // Usually your GitHub org/user name.
   projectName: 'RubickLuo.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '屾森のblog',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'static/img/logo.svg',
       },
       links: [
         // {
@@ -89,7 +89,7 @@ module.exports = {
         // },
         blog: {
           path: './blog',
-          routeBasePath: '/'
+          // routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
