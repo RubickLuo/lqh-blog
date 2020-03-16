@@ -1,6 +1,6 @@
 module.exports = {
   title: '屾森のblog',
-  tagline: `待我走尽苦，还你一口甜`,
+  tagline: '待我走尽苦，还你一口甜',
   url: 'https://essm.xyz',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
