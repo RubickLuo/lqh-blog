@@ -1,6 +1,6 @@
 ---
 id: docusaurus
-title: Docusaurus使用(一):安装部署!
+title: Docusaurus使用(一):安装配置
 author: RubuickLuo
 author_title: Full Stack Engineer In The Future.
 author_url: https://github.com/RubickLuo
@@ -137,5 +137,5 @@ tags | 博客标签, 是个数组形式。
 
 文章太长加上：```<!--truncate-->```其之后的内容将被收起。
 
->引用：https://www.zxuqian.cn/deploy-a-docusaurus-site
+>参考：https://www.zxuqian.cn/deploy-a-docusaurus-site
 
